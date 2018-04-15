@@ -6,7 +6,177 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <header class="page-header">
 
+      <div class="page-header__logo logo">
+        <a class="logo__link">
+          <img src="http://placehold.it/150x100" alt="Логотип мобильного приложения «Pink»">
+        </a>
+      </div>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">«Pink» - мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
+
+      <section class="promo">
+        <h2 class="visually-hidden">Cкачать приложение</h2>
+        <div class="promo__content"></div>
+
+        <div class="promo__download download">
+          <a class="btn download_btn" href="#">Скачать приложение</a>
+          <ul class=download__list>
+            <li class="download__item">
+              <a class=download__link href="#">
+                <span class="visually-hidden">Apple</span>
+                <img src="http://placehold.it/150x100" alt="Apple">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class=download__link href="#">
+                <span class="visually-hidden">Android</span>
+                <img src="http://placehold.it/150x100" alt="Android">
+              </a>
+            </li>
+            <li class="download__item">
+              <a class=download__link href="#">
+                <span class="visually-hidden">Windows Phone</span>
+                <img src="http://placehold.it/150x100" alt="Windows Phone">
+              </a>
+            </li>
+          </ul>
+          <p class="promo__download-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Коротко о нас</h2>
+        <div class="features__slogan">
+          <p class="features__text">Устали от серости мегаполиса?</p>
+          <p class="features__text">Нам есть, что вам предложить!</p>
+        </div>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="features__img" src="http://placehold.it/150x100">
+      </section>
+
+      <section class="reviews slider">
+        <h2 class="visually-hidden">Отзывы о нас</h2>
+        <ul class="slider__list">
+          <li class="slide review">
+            <blockquote class="review__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>>
+            <cite class="review__author-name">Николай Петров</cite>
+          </li>
+          <li class="slide review">
+            <blockquote class="review__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>>
+            <cite class="review__author-name">Николай Петров</cite>
+          </li>
+          <li class="slide review">
+            <blockquote class="review__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+            <cite class="review__author-name">Николай Петров</cite>
+          </li>
+        </ul>
+
+        <div class="slider__toggles">
+          <input class="visually-hidden slider__input-radio" id="reviews-slider-1" type="radio" name="slider-toggle" value="1" checked>
+          <label class="slider__label" for="reviews-slider-1">
+            <span class="visually-hidden">1 слайд</span>
+          </label>
+          <input class="visually-hidden slider__input-radio" id="reviews-slider-2" type="radio" name="slider-toggle" value="2">
+          <label class="slider__label" for="reviews-slider-2">
+            <span class="visually-hidden">2 слайд</span>
+          </label>
+          <input class="visually-hidden slider__input-radio" id="reviews-slider-3" type="radio" name="slider-toggle" value="3">
+          <label class="slider__label" for="reviews-slider-3">
+            <span class="visually-hidden">3 слайд</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="price slider">
+        <h2 class="visually-hidden">Наши тарифы</h2>
+        <table class="price__table cost-table">
+          <tr>
+            <th class="cost-table__title cost-table__title--hit">Стандарт
+              <p class="cost-table__number">3,99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td class="cost-table__option">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="cost-table__option">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="cost-table__option">Комментарии</td>
+          </tr>
+        </table>
+
+        <div class="slider__toggles">
+          <input class="visually-hidden slider__input-radio" id="price-slider-1" type="radio" name="slider-toggle" value="1" checked>
+          <label class="slider__label" for="price-slider-1">
+            <span class="visually-hidden">1 слайд</span>
+          </label>
+          <input class="visually-hidden slider__input-radio" id="price-slider-2" type="radio" name="slider-toggle" value="2">
+          <label class="slider__label" for="price-slider-2">
+            <span class="visually-hidden">2 слайд</span>
+          </label>
+          <input class="visually-hidden slider__input-radio" id="price-slider-3" type="radio" name="slider-toggle" value="3">
+          <label class="slider__label" for="price-slider-3">
+            <span class="visually-hidden">3 слайд</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <p class="contacts__slogan">Остались вопросы?</p>
+        <p class="contacts__slogan">Свяжитесь с нами!</p>
+        <div class="contacts__info-wrapper">
+          <span class="contacts__text">Звоните:</span>
+          <a class="contacts__info" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__info-wrapper">
+          <span class="contacts__text">Пишите:</span>
+          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__info-wrapper">
+          <span class="contacts__text">Приезжайте в гости:</span>
+          <span class="contacts__info">ул.Большая Конюшенная, 19/8</span>
+        </div>
+        <div class="contacts__map"></div>
+      </section>
+    </main>
   </body>
 </html>
