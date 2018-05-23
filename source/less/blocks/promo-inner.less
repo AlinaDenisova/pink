@@ -1,0 +1,40 @@
+.promo-inner {
+  .container;
+}
+
+@media (min-width: @desktop-width) {
+  .promo-inner {
+    .desktop-width;
+  }
+}
+
+.promo-inner__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-inner__title {
+    font-size: 50px;
+    line-height: 58px;
+    padding-top: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo-inner__title {
+    font-size: 50px;
+    line-height: 58px;
+    padding: 0 200px;
+    padding-top: 65px;
+
+    &--contest {
+      padding: 0 90px;
+      padding-top: 65px;
+    }
+  }
+}
