@@ -19,8 +19,11 @@ var tool = document.querySelectorAll(".new-photo__tool");
 if (tool) {
   for (var i = 0; i < tool.length; i++) {
     tool[i].addEventListener ("click", function (evt) {
+      for (var n = 0; n < tool.length; n++) {
+        tool[n].classList.remove("new-photo__tool--active");
+      };
+      this.classList.add("new-photo__tool--active");
       evt.preventDefault();
-      tool.classList.add("new-photo__tool--active");
     });
   }
 }

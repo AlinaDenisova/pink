@@ -79,8 +79,8 @@ module.exports = function(grunt) {
       html: {
         files: [{
           expand: true,
-          src: ["source/*.html"],
-          dest: "build"
+          src: ["build/*.html"],
+          dest: ""
         }]
       }
     },
@@ -93,7 +93,8 @@ module.exports = function(grunt) {
           src: [
             "fonts/**/*.{woff,woff2}",
             "img/**",
-            "js/**"
+            "js/**",
+            "*.html"
           ],
           dest: "build"
         }]
@@ -141,7 +142,7 @@ module.exports = function(grunt) {
         tasks: ["less", "postcss", "csso"]
       },
       uglify: {
-        files: ["source/js/**/*.js"],
+        files: ["build/js/*.js"],
         tasks: ["uglify"]
       }
     }
