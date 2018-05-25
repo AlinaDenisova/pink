@@ -182,7 +182,7 @@
 
 @media (min-width: @desktop-width) {
   .new-photo__tool {
-    padding:15px 0;
+    padding: 15px 0;
 
     &--active .range-controls {
       width: 70.3%;
@@ -217,84 +217,6 @@
   .new-photo__tool-icon {
     width: 48px;
     height: 44px;
-  }
-}
-
-.range-controls {
-  position: absolute;
-  display: none;
-
-  &:active .range-controls__toggle {
-    background-color: @pink;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .range-controls {
-    display: block;
-    width: 73.7%;
-    right: 18px;
-    top: 50%;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .range-controls {
-    width: 70.3%;
-    right: 30px;
-  }
-}
-
-.range-controls__scale {
-  width: 100%;
-  height: 2px;
-  background-color: @black;
-}
-
-.range-controls__toggle {
-  box-sizing: border-box;
-  width: 14px;
-  height: 14px;
-  background-color: @gray;
-  border: 2px solid @pink;
-  border-radius: 50%;
-  position: absolute;
-  top: -6px;
-  right: 13.75%;
-}
-
-@media (min-width: @tablet-width) {
-  .range-controls__toggle {
-    &--crop {
-      right: 20.75%;
-    }
-
-    &--fill {
-      right: auto;
-      left: 12.5%;
-    }
-
-    &--contrast {
-      right: 45.5%;
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .range-controls__toggle {
-    &--crop {
-      right: auto;
-      left: 24.5%;
-    }
-
-    &--fill {
-      left: auto;
-      right: 10%;
-    }
-
-    &--contrast {
-      right: 39%;
-    }
   }
 }
 
