@@ -56,3 +56,38 @@
     width: 230px;
   }
 }
+
+.page-footer__logo-link {
+  &:hover .page-footer__logo-title,
+  &:focus .page-footer__logo-title {
+    fill: @pink;
+  }
+
+  &:active .page-footer__logo-title {
+    fill: fade(@navy-blue, 30%);
+  }
+}
+
+.page-footer__logo-mobile {
+  display: block;
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__logo-mobile {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__logo-desktop {
+    display: block;
+  }
+}
+
+.page-footer__logo-title {
+  fill: @navy-blue;
+}
