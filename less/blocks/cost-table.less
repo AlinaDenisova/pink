@@ -1,0 +1,239 @@
+.cost-table {
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .cost-table {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.cost-table__title {
+  min-height: 98px;
+  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @white;
+  background-color: @navy-blue;
+  border-right: 2px solid #e5e5e5;
+  position: relative;
+  text-transform: uppercase;
+
+  &--hit::before,
+  &--hit::after {
+    content: "";
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
+  &--hit::before {
+    top: -37px;
+    left: -44px;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 27px;
+    border-color: transparent transparent @pink;
+  }
+
+  &--hit::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    color: @white;
+  }
+
+  &:first-child {
+    background-color: transparent;
+  }
+
+  &:last-child,
+  &:first-child {
+    border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .cost-table__title {
+    font-size: 16px;
+    min-height: 79px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+
+    &--hit::before {
+      top: -29px;
+      left: -37px;
+      width: 30px;
+      height: 15px;
+    }
+
+    &--hit::after {
+      top: 5px;
+      left: 6px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cost-table__title {
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 22px;
+
+    &--hit::before {
+      top: -25px;
+      width: 45px;
+      left: -39px;
+    }
+
+    &--hit::after {
+      top: 12px;
+      left: 10px;
+    }
+  }
+}
+
+.cost-table__number {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .cost-table__number {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cost-table__number {
+    font-size: 24px;
+  }
+}
+
+.cost-table__option {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  min-width: 276px;
+  padding: 15px 0;
+  padding-right: 55px;
+  padding-left: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .cost-table__option {
+    min-width: 155px;
+    text-transform: none;
+    padding: 0 15px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cost-table__option {
+    font-size: 18px;
+    min-width: 235px;
+    max-width: 235px;
+    padding: 0 25px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .cost-table__option-hidden {
+    display: none;
+  }
+}
+
+.cost-table__first-column {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .cost-table__first-column {
+    display: table-cell;
+    min-width: 155px;
+    border-top: 2px solid #e5e5e5;
+    max-width: 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cost-table__first-column {
+    min-width: 237px;
+    max-width: 237px;
+  }
+}
+
+
+.cost-table__option-checked {
+  position: absolute;
+  top: 18px;
+  right: 19px;
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 31px 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .cost-table__option-checked {
+    right: 40%;
+    top: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cost-table__option-checked {
+    right: 43%;
+    top: 21px;
+  }
+}
+
+.cost-table__option-unchecked {
+  position: absolute;
+  top: 10px;
+  right: 21px;
+  width: 27px;
+  height: 26px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .cost-table__option-unchecked {
+    right: 41.5%;
+    top: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cost-table__option-unchecked {
+    right: 44%;
+    top: 18px;
+  }
+}

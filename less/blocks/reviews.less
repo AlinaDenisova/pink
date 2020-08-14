@@ -1,0 +1,47 @@
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    padding-top: 37px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .reviews__container {
+    position: relative;
+  }
+}
+
+.reviews__list {
+  .list-reset;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__list {
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__list {
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,32 @@
+.price {
+  background-color: @gray;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+}
+
+@media (min-width: @tablet-width) {
+  .price {
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .price {
+    padding-top: 140px;
+    padding-bottom: 95px;
+  }
+}
+
+.price__container {
+  .container;
+}
+
+@media (min-width: @desktop-width) {
+  .price__container {
+    padding: 0;
+  }
+}
